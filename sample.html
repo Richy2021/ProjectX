@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .float-left {
+      float:right;
+      width: 50%;
+    }
+  
+    .float-right {
+      float: left;
+      width: 40%;
+    }
+  
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  
+  <div class="clearfix">
+    <p class="float-left">This text floats left.</p>
+    <img class="float-right" src="joy1.jpg" width="100" alt="Photo">
+  </div>
+  
+</body>
+</html>
